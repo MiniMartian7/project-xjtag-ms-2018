@@ -1,0 +1,23 @@
+CIRCUIT NAME := "New Project"
+
+  COMPAT_VERSION := 1; // Base
+
+  BOARD NAME := "XJTAG_SCH_V1"
+    FILENAME := "Board-XJTAG_SCH_V1.xje";
+  END; // End of board XJTAG_SCH_V1
+
+  // JTAG interface description
+  JTAG CHAIN
+    CONNECTOR "JTAG Header"
+      MAPPING
+        XJTAG;
+      END;
+    END;
+  END;
+
+  // Additional files
+  FILES
+    "globals.xje";
+  END;
+END;
+

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NetList>
+  <Component Reference="100pF">
+    <Value>100pF</Value>
+  </Component>
+  <Component Reference="10k">
+    <Value>10k</Value>
+  </Component>
+  <Component Reference="22R">
+    <Value>22R</Value>
+  </Component>
+  <Component Reference="68R">
+    <Value>68R</Value>
+  </Component>
+  <Component Reference="ATMEGA">
+    <Value>ATMEGA16</Value>
+  </Component>
+  <Component Reference="J1">
+    <Value>CON5</Value>
+  </Component>
+  <Net Name="0">
+    <Pin Component="100pF" Number="2" />
+    <Pin Component="10k" Number="2" />
+  </Net>
+  <Net Name="AVCC">
+    <Pin Component="ATMEGA" Number="30" />
+  </Net>
+  <Net Name="N01455">
+    <Pin Component="100pF" Number="1" />
+    <Pin Component="68R" Number="2" />
+  </Net>
+  <Net Name="RST">
+    <Pin Component="10k" Number="1" />
+    <Pin Component="ATMEGA" Number="9" />
+    <Pin Component="J1" Number="4" />
+  </Net>
+  <Net Name="TCK">
+    <Pin Component="68R" Number="1" />
+    <Pin Component="ATMEGA" Number="24" />
+    <Pin Component="J1" Number="2" />
+  </Net>
+  <Net Name="TDI">
+    <Pin Component="ATMEGA" Number="27" />
+    <Pin Component="J1" Number="1" />
+  </Net>
+  <Net Name="TDO">
+    <Pin Component="22R" Number="1" />
+    <Pin Component="22R" Number="2" />
+    <Pin Component="ATMEGA" Number="26" />
+    <Pin Component="J1" Number="5" />
+  </Net>
+  <Net Name="TMS">
+    <Pin Component="ATMEGA" Number="25" />
+    <Pin Component="J1" Number="3" />
+  </Net>
+  <Net Name="VCC">
+    <Pin Component="ATMEGA" Number="10" />
+  </Net>
+</NetList>
